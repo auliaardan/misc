@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+</head>
+<body>
+    <h1>Your Text</h1>
+    <a href={% url 'home' %}>Home</a>
+    </br>
+    {{ fulltext }}
+    <h1>There are {{ count }} words in your text</h1>
+    {% for k,v in worddict %}
+        <p> {{ k }} : {{ v }} times </p>
+    {% endfor %}
+
+</body>
+</html>
